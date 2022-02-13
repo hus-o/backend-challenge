@@ -1,0 +1,36 @@
+{
+  "name": "microservice-bootstrap",
+  "version": "1.0.0",
+  "description": "An opinionated microservice framework for quick bootstrapping of code",
+  "scripts": {
+    "start": "nodemon -r esm lib/app.js",
+    "test": "jest"
+  },
+  "author": "cohire/lacunadream",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "body-parser": "^1.15.2",
+    "config": "^3.2.4",
+    "dateformat": "^3.0.3",
+    "esm": "^3.2.25",
+    "express": "^4.14.0",
+    "express-jwt": "^5.3.0",
+    "express-winston": "^2.4.0",
+    "js-yaml": "^3.8.3",
+    "swagger-jsdoc": "^1.9.7",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "jest": "^27.5.1",
+    "nodemon": "^1.11.0",
+    "supertest": "^6.2.2"
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
